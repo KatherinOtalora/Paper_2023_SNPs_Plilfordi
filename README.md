@@ -8,12 +8,13 @@ This repository includes several codes for the identification of SNPs from GBS d
 
 ```mermaid
 flowchart TD
-    A[Use P. lilfordi reference genome (.fa)] --> B[Create FASTA index and dictionary (Samtools)]
-    B --> C[Create BWA index of reference genome]
-    C --> D[Download FASTQs from Bassitta et al. (2021) via ENA Browser]
-    D --> E[Create sample sheet with sample IDs]
-    E --> F[Align FASTQ reads to reference genome (BWA)]
-    F --> G[Call variants with HaplotypeCaller (GATK)]
-    G --> H[Combine individual gVCFs (CombineGVCFs)]
-    H --> I[Filter variants (Get Supported Variants -D -N)]
-    I --> J[Generate VCF with GenotypeGVCFs (GATK)]
+    A["Use P. lilfordi reference genome (.fa)"] --> B["Create FASTA index and dictionary (Samtools)"]
+    B --> C["Create BWA index of reference genome"]
+    C --> D["Download FASTQs from Bassitta et al. 2021 via ENA Browser"]
+    D --> E["Create sample sheet with sample IDs"]
+    E --> F["Align FASTQ reads to reference genome (BWA)"]
+    F --> G["Call variants with HaplotypeCaller (GATK)"]
+    G --> H["Combine individual gVCFs (CombineGVCFs)"]
+    H --> I["Filter variants (Get Supported Variants -D -N)"]
+    I --> J["Generate VCF with GenotypeGVCFs (GATK)"]
+
