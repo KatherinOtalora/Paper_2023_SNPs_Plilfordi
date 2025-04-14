@@ -18,6 +18,8 @@ flowchart TD
     H --> I["Filter variants (Get Supported Variants -D -N)"]
     I --> J["Generate VCF with GenotypeGVCFs (GATK)"]
 
+
+```mermaid
 flowchart TD
     A["1. Reference genome assembly (Catalan Biogenome Project)"]
     A --> A1["18 autosomal chromosomes + sex chromosomes"]
