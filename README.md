@@ -6,6 +6,8 @@ This repository includes several codes for the identification of SNPs from GBS d
 
 ## SNP Discovery Workflow (GATK pipeline)
 
+
+```mermaid
 flowchart TD
     A["1. Reference genome assembly (Catalan Biogenome Project)"]
     A --> A1["18 autosomal chromosomes + sex chromosomes"]
