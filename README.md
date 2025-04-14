@@ -78,8 +78,7 @@ flowchart TD
     L2 --> L3["Visualization with REViGO"]
     L3 --> L4["GFF file from P. lilfordi genome"]
 
-    %% Datasets (linked to filtering)
-    D2 --> M["Datasets:"]
+    D2 --> M["Datasets"]
     M --> M1["Combined: 6,394,354 SNPs (191 individuals)"]
     M1 --> M2["ExtSamples: 4,851,070 SNPs (91 individuals)"]
     M2 --> M3["IntSamples: 1,888,392 SNPs (100 individuals)"]
