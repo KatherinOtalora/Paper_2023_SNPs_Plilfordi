@@ -4,7 +4,7 @@ This repository includes several codes for the identification of SNPs from GBS d
 
 
 
-## SNP Discovery Workflow (GATK pipeline)
+## SNP Analysis Workflow
 
 
 ```mermaid
