@@ -18,4 +18,6 @@ flowchart TD
     H --> I["Filter variants (Get Supported Variants -D -N)"]
     I --> J["Generate VCF with GenotypeGVCFs (GATK)"]
 
-## SNP Discovery Workflow (GATK pipeline) 
+
+
+# SNP Discovery Workflow (GATK pipeline) 
