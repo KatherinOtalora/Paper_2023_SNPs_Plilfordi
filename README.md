@@ -82,4 +82,3 @@ flowchart TD
     M --> M1["Combined: 6,394,354 SNPs (191 individuals)"]
     M1 --> M2["ExtSamples: 4,851,070 SNPs (91 individuals)"]
     M2 --> M3["IntSamples: 1,888,392 SNPs (100 individuals)"]
-
