@@ -1,0 +1,22 @@
+########Instalacion de STACKS #########
+
+ cd /Users/katherin_otalora/Documents/stacks-2.61
+ sudo ./configure
+ sudo make
+ sudo make install
+
+ sudo ./configure /usr/local/home/smith/local
+
+ sudo make -j 8
+
+######### ANALISIS POBLACIONALES intSamples SNPS ####### CON ESTA OPCION FUE SUFICIENTE ######### CORRIO BIEN
+#Populations es un paquete de STACKs que analiza una población de muestras individuales calculando una serie de estadísticas de genética de poblaciones así como exportando una variedad de formatos de salida estándar.
+#Se envía al programa un mapa de la población que especifica qué individuos pertenecen a cada población y el programa calculará entonces las estadísticas de genética de la población, como la heterocigosidad esperada/observada, π y FIS en cada posición de nucleótido.
+# -V,--in_vcf - ruta a un archivo VCF de entrada. (Recordar que el VCF puede tener los nombres dobles y hay que cambiarlos previamente por eso el archivo es _1)
+# --popmap - ruta a un mapa de población. (El formato es 'MUESTRA1 \t POP1 \n MUESTRA2 ...')
+# --smooth — enable kernel-smoothed π, FIS, FST, FST', and ΦST calculations.n (Genera los inidices de diversidad genetica para mis SNPs)
+# -t,--threads - número de threads a ejecutar en secciones de código en paralelo
+# --genepop --treemix, me genera un output .genepop .treemix para analisis posteriores (se pueden generar mas outputs dependiendo de los analisis que quiera realizar).
+#--out-path es el lugar donde quieres que se guarde tu output
+
+populations -V /Users/katherin_otalora/Documents/stacks-2.61/extSample.plilfordi_filter_minalle2_maxalle2_MAF005_Q30_minDP10_maxD50_maxMISS075.vcf --popmap /Users/katherin_otalora/Documents/stacks-2.61/popmap_2.txt --smooth -t 4 --genepop --treemix --out-path /Users/katherin_otalora/Documents/stacks-2.61/1SNP_stack_data_mix
